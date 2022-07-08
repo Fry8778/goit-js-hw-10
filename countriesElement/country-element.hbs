@@ -1,0 +1,13 @@
+<p style='font-size:30px; font-weight:900'><img
+    src='{{flags.svg}}'
+    alt='Flag of {{name.official}}'
+    width='40'
+  />
+  {{name.official}}</p>
+<p><span style='font-size:20px; font-weight:800'>Capital:</span>
+  {{capital}}</p>
+<p><span style='font-size:20px; font-weight:800'>Population:</span>
+  {{population}}
+</p>
+<p><span style='font-size:15px; font-weight:800'>Languages:</span>
+  {{#each languages}} {{this}} {{#unless @last}}, {{/unless}}{{/each}}</p>
